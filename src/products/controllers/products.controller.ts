@@ -9,13 +9,12 @@ import {
   Delete,
   HttpCode,
   HttpStatus,
-  // ParseIntPipe,
+  ParseIntPipe,
 } from '@nestjs/common';
 
-import { ProductsService } from '../../services/products/products.service';
+import { ProductsService } from '../services/products.service';
 
-import { ParseIntPipe } from '../../common/parse-int/parse-int.pipe';
-import { CreateProductDto, UpdateProductDto } from '../../dtos/products.dtos';
+import { CreateProductDto, UpdateProductDto } from '../dtos/products.dtos';
 
 // el decorador Controller nos permite definir una ruta y ya no es necesario definir la ruta en cada decorador
 @Controller('products')

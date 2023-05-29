@@ -3,8 +3,8 @@ import {
   NotFoundException,
   ForbiddenException,
 } from '@nestjs/common';
-import { Product } from '../../entities/product.entity';
-import { CreateProductDto, UpdateProductDto } from 'src/dtos/products.dtos';
+import { Product } from '../entities/product.entity';
+import { CreateProductDto, UpdateProductDto } from '../dtos/products.dtos';
 
 //Injectable es un decorador que nos permite inyectar dependencias a una clase
 @Injectable()
